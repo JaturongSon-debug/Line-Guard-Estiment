@@ -539,6 +539,10 @@ footer {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 footer a {
@@ -549,3 +553,34 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.developer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(108, 92, 231, 0.12);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  padding: 8px 18px;
+  border-radius: 30px;
+  color: #E2E8F0;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+}
+
+.developer-credit:hover {
+  border-color: rgba(108, 92, 231, 0.6);
+  background: rgba(108, 92, 231, 0.2);
+  transform: translateY(-2px);
+  color: #FFF;
+}
+
+.developer-credit i {
+  color: var(--primary-light);
+}
+
+.developer-credit strong {
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
